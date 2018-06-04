@@ -18,7 +18,7 @@ public class Main {
 		String noImageURL = (baseURL + "pers_upload.blob_display?wp_pracownik_id=-1");
 		String tmp, nazwaPliku, imageURL, has_img;
 
-		for (int x = 1020000; x <= 1050000; x++) {
+		for (int x = 1; x <= 1050000; x++) {
 			//if(x>11000) { x=1020000; }
 			Document doc = Jsoup.connect(baseURL + "result_3.show_employee?wp_pracownik_id=" + x).get();
 			Elements nazwa = doc.select("td.pracownik");
